@@ -63,7 +63,7 @@ export default function App() {
         <span>Impuesto País 30%: <span className='resultados'>${impuestoPais || '0'}</span></span>
         <span>Retención del 100%: <span className='resultados'>${retencion || '0'}</span></span>
         <span>Bienes Personales 25%: <span className='resultados'>${bienesPersonales || '0'}</span></span>
-        <span>Precio Total: <span className='resultados resultado_final'>${precioCalculado || '0'}</span></span>
+        <span>Precio Total en pesos: <span className='resultados resultado_final'>${precioCalculado || '0'}</span></span>
       </div>
       <p>Esto nos sirve para saber cuanto nos costara alguna compra en dolares, como en Steam, en Amazon, etc.</p>
       <p className='link_portfolio'>Coded by <a href='https://valemiche.com.ar'>Valentino Micheloni</a></p>
