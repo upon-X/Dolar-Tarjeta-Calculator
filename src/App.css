@@ -88,10 +88,6 @@ form {
   background-color: rgb(119, 119, 119);
 }
 
-.link_portfolio {
-  position: absolute;
-  bottom: 0;
-}
 
 @media (max-width: 924px) {
   form {
