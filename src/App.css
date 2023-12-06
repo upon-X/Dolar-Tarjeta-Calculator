@@ -88,6 +88,10 @@ form {
   background-color: rgb(119, 119, 119);
 }
 
+.fecha_actualizacion {
+  font-size: 1rem;
+  text-indent: 20px;
+}
 
 @media (max-width: 924px) {
   form {
