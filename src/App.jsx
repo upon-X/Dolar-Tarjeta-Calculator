@@ -13,9 +13,11 @@ export default function App() {
   const [precioCalculado, setPrecioCalculado] = useState(null);
   const [widthPage, setWidthPage] = useState(true);
 
+  // constantes para el link del correo dependiendo si es dispositivo movil o pc
   const mailcel = 'mailto:valemiche003e@gmail.com.ar?subject=CalculadoraDolarTarjeta'
   const mailpc = 'https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=valemiche003@gmail.com&su=CalculadoraDolarTarjeta'
 
+  // feature para formatear la fecha que nos llega de la api
   const formatDate = (dateString) => {
     const options = {
       day: 'numeric',
@@ -41,7 +43,7 @@ export default function App() {
       });
   };
 
-  // Efecto para cargar datos al montar el componente y establecer el valor inicial de precioDolares
+  // useEffect para cargar datos al montar el componente y establecer el valor inicial de precioDolares = Dolar Oficial
   useEffect(() => {
     fetchData();
     if (window.innerWidth > 700) {
